@@ -3,6 +3,7 @@ class Player
   def initialize(character, type)
     @character = character
     @type = type
+    @awake = true
     @living = true
   end
 end
