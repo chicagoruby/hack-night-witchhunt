@@ -2,7 +2,7 @@ require_relative 'player'
 
 num_players = 0
 num_witches = 0
-num_clergy = 0
+num_clergy = 1
 players = []
 
 while num_players < 7 do
@@ -19,7 +19,7 @@ case num_players
     num_witches = 4
   else
     num_witches = 5
-    num_alcolytes = 1
+    num_clergy = 2
 end
 
 puts "There are #{num_players} players, #{num_witches} witches, and #{num_clergy} acolytes."
@@ -37,7 +37,11 @@ characters = [
                 "oracle",
                 "watchman",
                 "hunter",
-                "emissary"
+                "emissary",
+                "bonus",
+                "bonus",
+                "bonus",
+                "acolyte"
               ]
 types = [ "villager", "witch", "clergy member" ]
 
