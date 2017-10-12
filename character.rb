@@ -1,13 +1,12 @@
 
 class Character
 
+  attr_accessor :name, :is_witch, :is_dead
+
   def initialize(name)
     @name = name
-    @witch? = false
-    @dead? = false
+    @is_witch = false
+    @is_dead = false
   end
-
-
-
 
 end
