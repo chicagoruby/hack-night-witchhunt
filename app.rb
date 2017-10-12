@@ -1,4 +1,7 @@
 require_relative 'player'
+require_relative 'game'
+
+game = Game.new
 
 num_players = 0
 num_witches = 0
@@ -73,3 +76,8 @@ while i < num_players do
   i += 1
 end
 
+#p players
+
+game.night(players)
+
+#p players.select { |player| player.character == "gravedigger"}

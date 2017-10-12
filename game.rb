@@ -1,3 +1,5 @@
+require_relative 'player'
+
 class Game
   def initialize
 
@@ -7,8 +9,11 @@ class Game
     @phase = 1
   end
 
-  def night
+  def night(players)
     # 1. Gravedigger info
+    if players.select { |player| player.character == "gravedigger"}.any?
+      p "Wake the gravedigger."
+    end
     # 2. Demons meddle
     # 3. Angels protect
     # 4. Witches kill
