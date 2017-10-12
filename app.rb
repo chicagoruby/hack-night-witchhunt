@@ -24,8 +24,21 @@ end
 
 puts "There are #{num_players} players, #{num_witches} witches, and #{num_clergy} acolytes."
 
-characters = [ "moderator", "priest", "judge", "gravedigger", "apprentice", "survivalist", "dirty_ol_bastard" ]
-#[ "gambler", "fanatic", "oracle", "watchman", "hunter", "emissary" ]
+characters = [
+                "moderator",
+                "priest",
+                "judge",
+                "gravedigger",
+                "apprentice",
+                "survivalist",
+                "dirty_ol_bastard",
+                "gambler",
+                "fanatic",
+                "oracle",
+                "watchman",
+                "hunter",
+                "emissary"
+              ]
 types = [ "villager", "witch", "clergy member" ]
 
 # initialize player array
